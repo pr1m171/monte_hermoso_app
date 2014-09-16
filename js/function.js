@@ -9,7 +9,7 @@
     });
 	
 	function leamap(){
-if(a=='1'){
+	if(a=='1'){
 		map = new GMaps({
         div: '#map_canvas',
         lat: -38.98686, 
@@ -31,9 +31,16 @@ if(a=='1'){
         title: 'Monte Hermoso',
         infoWindow: {
           content: '<p>Bienvenido! :-)</p>'
-        }
-				
+        }	
       });
+	  var styles = [ { featureType: "poi.business", elementType: "labels", stylers: [ { visibility: "off" } ] } ];
+	  map.addStyle({
+    styledMapName:"Styled Map",
+    styles: styles,
+    mapTypeId: "map_style"  
+});
+
+map.setStyle("map_style");
 		var largo_mapa = $(document).height(); 
 		var largo_mapa_final = largo_mapa -100;
 		var ancho_mapa = $(document).width();
@@ -42,12 +49,5 @@ if(a=='1'){
 		$("#map_canvas").css("width",ancho_mapa_final);
 		$("#map_canvas").css("margin-top","10px");
 		$("#map_canvas").css("margin-bottom","10px");
-		/*var map = L.map('map_canvas').setView([-38.98748, -61.288], 15);
-		L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-		attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a>'
-		}).addTo(map);
-		
-		// add a marker in the given location, attach some popup content to it and open the popup
-		L.marker([-38.98748, -61.288]).addTo(map);*/
-}
+	}
 	}
