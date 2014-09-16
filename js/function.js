@@ -1,6 +1,9 @@
 	var map;
 	var a = '1';
 	$(document).ready(function(e) {
+	var largo_mapa = $(document).height(); 
+	var largo_mapa_final = largo_mapa -50;
+	$("#drame_cro").css("height",largo_mapa_final);
     $("#click_mapa").click(function(e){
 		e.preventDefault();
 		leamap();

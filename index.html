@@ -29,11 +29,10 @@
                 <li><a href="#faq">F.A.Q.</a></li>
                 <li><a href="#contacto">CONTACTO</a></li>
             </ul>
-            <center><img src="img/logo-master.png" width="90%" /></center>
         </section>
 
         <section id="cronograma" data-title="CRONOGRAMA">
-        	
+        	<iframe id="drame_cro" src="vertical-timeline/index.html" frameborder="0" scrolling="no"></iframe>
         </section>
 
         <section id="noticias" data-title="NOTICIAS">
@@ -45,7 +44,10 @@
 	</section>
         
         <section id="clima" data-title="CLIMA">
-        	
+            <center><div id="cont_17836f7fb3f80a411ac7d2dd70f65793">
+            <span id="h_17836f7fb3f80a411ac7d2dd70f65793">El Tiempo en Monte Hermoso</span>
+            <script type="text/javascript" src="http://www.tiempo.com/wid_loader/17836f7fb3f80a411ac7d2dd70f65793"></script>
+            </div></center>
         </section>
         
         <section id="faq" data-title="F.A.Q.">
@@ -53,7 +55,31 @@
         </section>
         
         <section id="contacto" data-title="CONTACTO">
-        
+        	<form>
+            <fieldset style="margin-left:5%; margin-right:5%;">
+                <div class="row">
+                    <label for="plaintext">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre...">
+                </div>
+                <div class="row">
+                    <label for="plaintext">Apellido</label>
+                    <input type="text" name="apellido" id="apellido" placeholder="Ingrese su apellido...">
+                </div>
+                <div class="row">
+                    <label for="plaintext">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Ingrese su email...">
+                </div>
+                <div class="row">
+                    <label for="plaintext">Asunto</label>
+                    <input type="text" name="asunto" id="asunto" placeholder="Asunto...">
+                </div>
+                <div class="row">
+                    <label for="textarea">Consulta</label>
+                    <textarea name="consulta" id="consulta" placeholder="Ingrese su consulta..."></textarea>
+                </div>
+                <button type="submit" class="mainButton">Enviar</button>
+            </fieldset>
+            </form>
         </section>
         <script src="js/jquery.min.js"></script>
         <script src="js/leaflet/leaflet.js"></script>
