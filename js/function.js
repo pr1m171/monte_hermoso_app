@@ -40,7 +40,6 @@
     $("#click_mapa").click(function(e){
 		e.preventDefault();
 		leamap();
-		mapear();
 		a = '2';
 	});
     });
@@ -53,7 +52,7 @@ function mapear(){
 					type: "POST",
 					dataType: "html",
 					contentType: "application/x-www-form-urlencoded",
-					url:"http://mgocx.net/monte/connect/mapa.php",
+					url:"http://127.0.0.1/monte_hermoso/connect/mapa.php",
 					data:"vista=12",
 					beforeSend:enviar_vista,
 					success:add_markers,
@@ -117,6 +116,7 @@ function problemas_vista(){
 });
 
 map.setStyle("map_style");
+mapear();
 		var largo_mapa = $(document).height(); 
 		var largo_mapa_final = largo_mapa -100;
 		var ancho_mapa = $(document).width();
@@ -126,7 +126,7 @@ map.setStyle("map_style");
 		$("#map_canvas").css("margin-top","10px");
 		$("#map_canvas").css("margin-bottom","10px");
 	}
-
+	
 /*
 	map.addMarker({
         lat: -38.98686, 
