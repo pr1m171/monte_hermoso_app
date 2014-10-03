@@ -52,7 +52,7 @@ function mapear(){
 					type: "POST",
 					dataType: "html",
 					contentType: "application/x-www-form-urlencoded",
-					url:"http://127.0.0.1/monte_hermoso/connect/mapa.php",
+					url:"http://mgocx.net/monte/connect/mapa.php",
 					data:"vista=12",
 					beforeSend:enviar_vista,
 					success:add_markers,
