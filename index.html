@@ -1,122 +1,195 @@
-<!DOCTYPE html>
-<html lang="es">
+<!doctype html>
+<html>
     <head>
-        <meta charset="utf-8">
-        <title>Monte Hermoso</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-        <link rel="stylesheet" href="js/emy/emy.css" type="text/css">
-        <link rel="stylesheet" href="js/emy/themes/emy/main.css" type="text/css">
-        <script type="application/x-javascript" src="js/emy/emy.js"></script>
+        <meta charset="UTF-8" />
+        <title>Monte Hermoso - De sol a sol</title>
+        <link rel="stylesheet" type="text/css" href="css/timeline.css">
+        <link rel="stylesheet" href="js/frame/themes/css/innsbruck.min.css" data-jqt-theme>
+
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <!-- Either, (1) Zepto:  Un-comment these 2 lines (order matters)  -->
+        <script src="js/frame/lib/zepto/zepto.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="js/frame/src/jqt.min.js" type="text/javascript" charset="utf-8"></script>
+        
+        <!-- Or,     (2) jQuery: Un-comment these 3 lines (order matters)  -->
+        <!-- <script src="lib/jquery/jquery-1.7.min.js" type="application/x-javascript" charset="utf-8"></script> -->
+        <!-- <script src="src/jqt.min.js" type="text/javascript" charset="utf-8"></script> -->
+        <!-- <script src="src/jqtouch-jquery.min.js" type="application/x-javascript" charset="utf-8"></script> -->
+
+        <script src="js/frame/extensions/jqt.themeswitcher.min.js" type="application/x-javascript" charset="utf-8"></script>
+        <script src="js/frame/extensions/jqt.actionsheet.min.js" type="application/x-javascript" charset="utf-8"></script>
+        <script src="js/frame/extensions/jqt.menusheet.min.js" type="application/x-javascript" charset="utf-8"></script>
+
+        <script type="text/javascript" charset="utf-8">
+            var jQT = new $.jQT({
+                icon: 'jqtouch.png',
+                icon4: 'jqtouch4.png',
+                addGlossToIcon: false,
+                startupScreen: 'jqt_startup.png',
+                statusBar: 'black-translucent',
+                preloadImages: []
+            });
+
+            // Some sample Javascript functions:
+            
+        </script>
+        <style type="text/css" media="screen">
+            #jqt.fullscreen #home .info {
+                display: none;
+            }
+            div#jqt #about {
+	padding: 100px 10px 40px;
+	text-shadow: rgba(0, 0, 0, 0.3) 0px -1px 0;
+	color: #FFFFFF;
+	font-size: 13px;
+	text-align: center;
+	background-color: #FC683F;
+            }
+            div#jqt #about p {
+                margin-bottom: 8px;
+            }
+            div#jqt #about a {
+	color: #fff;
+	font-weight: bold;
+	text-decoration: none;
+	background-color: #BF0003;
+            }
+        </style>
         <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
         <link rel="stylesheet" type="text/css" href="css/icons/css/font-awesome.css">
 		<link rel="stylesheet" type="text/css" href="css/icons/css/font-awesome.min.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        <link rel="stylesheet" type="text/css" href="js/slider/jquery.bxslider.css">
+        
+         <script src="js/frame/extensions/jqt.location.min.js" type="application/x-javascript" charset="utf-8"></script>
+        <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+        
+        
+        <script type="text/javascript" src="js/function.js"></script>
+        
+        <script type="text/javascript" charset="utf-8">
+
+            
+        </script>
+        <style type="text/css" media="screen">
+            #map_canvas {
+                height: 100%;
+                background-color: rgba(255,255,255,.3);
+            }
+        </style>
+        
+        
+        
+        
+        
         
     </head>
-<body>
-         <header class="toolbar">
-          <div><a id="backButton" class="button" href="#"></a></div>
-          <h1 id="viewTitle"></h1>
-        </header>
-
-        <section id="home" data-title="INICIO" selected="true">
-            <ul>
-                <li><a href="#cronograma"><i class="fa fa-calendar"></i>CRONOGRAMA</a></li>
-                <li><a href="#noticias"><i class="fa fa-newspaper-o"></i>NOTICIAS</a></li>
-                <li><a href="#mapa" id="click_mapa"><i class="fa fa-map-marker"></i>MAPA</a></li>
-                <li><a href="#clima"><i class="fa fa-sun-o"></i>CLIMA</a></li>
-                <li><a href="#faq"><i class="fa fa-exclamation"></i>F.A.Q.</a></li>
-                <li><a href="#contacto"><i class="fa fa-phone"></i>CONTACTO</a></li>
-            </ul>
-            <div style=" margin-top:10px;">&nbsp;</div>
-            <ul class="bxslider">
-                <li><img src="http://montehermoso.gov.ar/turismomh/wp-content/uploads/2014/02/playa2014-800x600-800x520.jpg" title="TEMPORADA RECORD EN MONTE HERMOSO" /></li>
-                <li><img src="http://montehermoso.gov.ar/turismomh/wp-content/uploads/2014/09/post-monte-hermoso-I.jpg" title="PROMOCIONES!!!" /></li>
-            </ul>
-        </section>
-
-        <section id="cronograma" data-title="CRONOGRAMA">
+    <body>
+        <div id="jqt" class="">
+            <div id="about" class="selectable">
+                <p><img src="http://127.0.0.1/monte_hermoso/monte_hermoso_app/app/img/monte.png" /></p>
+                <p><strong>Monte Hermoso</strong><br>Version 1.0 beta<br>
+                    SECRETARIA DE TURISMO DE MONTE HERMOSO</p>
+                <p><em>Creado por<br> mgocx sistemas.</em></p>
+                <p><br><br><a href="#" class="grayButton goback">Volver</a></p>
+            </div>
             
-        </section>
+			<div id="home" class="current">
+                <div class="toolbar">
+                    <h1>MONTE HERMOSO</h1>
+                    <a class="button slideup" id="infoButton" href="#about">Info</a>
+                </div>
+                <div class="scroll">
+                    <ul class="rounded">
+                        <li class="arrow"><a href="timeline.html" class="cube"><i class="fa fa-calendar"></i> CRONOGRAMA</a> </li>
+                        <li class="arrow"><a href="#noticias"><i class="fa fa-newspaper-o"></i> NOTICIAS</a></li>
+                        <li class="arrow"><a href="#mapa" id="ver_map"><i class="fa fa-map-marker"></i> MAPA</a></li>
+                        <li class="arrow"><a href="#clima"><i class="fa fa-sun-o"></i> CLIMA</a></li>
+                        <li class="arrow"><a href="#faq"><i class="fa fa-exclamation"></i> F.A.Q.</a> </li>
+                        <li class="arrow"><a href="#contacto"><i class="fa fa-phone"></i> CONTACTO</a></li>
+                    </ul>   
+                </div>
 
-        <section id="noticias" data-title="NOTICIAS" class="blog">
-        	<article>
-            	<h1>Lorem ipsum dolor</h1>
-                <img src="img/fondo.jpg" width="100%" />
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam iaculis facilisis augue vitae tincidunt. Fusce sit amet dolor nulla. Phasellus sed ultrices ipsum.</p>
-                <button class="mainButton redButton">Leer Mas...</button>
-            </article>
-                    	<article>
-            	<h1>Lorem ipsum dolor</h1>
-                <img src="img/test_img.jpeg" width="100%" />
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam iaculis facilisis augue vitae tincidunt. Fusce sit amet dolor nulla. Phasellus sed ultrices ipsum.</p>
-                <button class="mainButton redButton">Leer Mas...</button>
-            </article>
-        </section>
-        
-        <section id="mapa" data-title="MAPA">
-        <div id="map_canvas" style="position: relative;"></div>
-        <a id="buscador_bt" class="btn_buscar"><i class="fa fa-search"></i></a>
-        <div id="buscar">
-        	<form class="buscar_mapa">
-            	<input type="search" name="txt_buscar" id="txt_buscar" />
-                <button class="mainButton redButton" id="btn_search2"><i class="fa fa-search"></i> BUSCAR</button>
-            </form>
-        </div>
-	</section>
-        
-        <section id="clima" data-title="CLIMA">
-            <center>
+                <div class="info">
+                    <p>&copy; Monte Hermoso<br>2015</p>
+                </div>              
+            </div>
+            
+            
+				
+                
+                <div id="noticias">
+                    <div class="toolbar">
+                        <h1>MONTE HERMOSO</h1>
+                        <a class="back" href="#home">Volver</a>
+                    </div>
+                    <div class="scroll">
+                        
+                    </div>
+                </div>     
+				
+                
+                <div id="mapa">
+                	<div class="toolbar">
+                        <h1>MONTE HERMOSO</h1>
+                        <a class="back" href="#home">Volver</a>
+                    </div>
+                    <a id="buscador_bt" class="btn_buscar"><i class="fa fa-search"></i></a>
+                    <div id="buscar">
+                        <form class="buscar_mapa">
+                            <input type="search" name="url" placeholder="Buscar..." id="txt_buscar">
+                            <a href="#" id="btn_search2"><i class="fa fa-search"></i> BUSCAR</a>
+                        </form>
+                    </div>
+                    <div id="map_canvas" class="notransform">
+                    
+                    </div>
+				</div>
+
+<div id="clima">
+	<div class="toolbar">
+    	<h1>CLIMA</h1>
+        <a class="back" href="#home">Volver</a>
+    </div>
+    <div class="scroll">
+    	<center>
             <div id="cont_17836f7fb3f80a411ac7d2dd70f65793">
             <span id="h_17836f7fb3f80a411ac7d2dd70f65793">El Tiempo en Monte Hermoso</span>
             <script type="text/javascript" src="http://www.tiempo.com/wid_loader/17836f7fb3f80a411ac7d2dd70f65793"></script>
             </div>
             <h4>ESTADO DEL MAR:</h4>
-            <img src="../monte_hermoso_admin/assets/img/banderas/dudoso.png" width="75" />
+            <img src="http://127.0.0.1/monte_hermoso/monte_hermoso_admin/assets/img/banderas/dudoso.png" width="75" />
             <br>
             <h2>DUDOSO</h2>
             </center>
-        </section>
-        
-        <section id="faq" data-title="F.A.Q.">
-        	<center><h1>PREGUNTAS FRECUENTES</h1></center>
-            <button class="mainButton redButton">¿Como puedo ubicar un lugar en el mapa?</button>
-            <button class="mainButton greenButton">¿Como activar la Geolocalización?</button>
-            <button class="mainButton redButton">¿Como gaurdo mis preferencias?</button>
-            <button class="mainButton greenButton">¿Como desactivar el filtro?</button>
-        </section>
-        
-        <section id="contacto" data-title="CONTACTO">
-        	<form>
-            <fieldset style="margin-left:5%; margin-right:5%;">
-                <div class="row">
-                    <label for="plaintext">Nombre</label>
-                    <input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre...">
-                </div>
-                <div class="row">
-                    <label for="plaintext">Apellido</label>
-                    <input type="text" name="apellido" id="apellido" placeholder="Ingrese su apellido...">
-                </div>
-                <div class="row">
-                    <label for="plaintext">Email</label>
-                    <input type="email" name="email" id="email" placeholder="Ingrese su email...">
-                </div>
-                <div class="row">
-                    <label for="plaintext">Asunto</label>
-                    <input type="text" name="asunto" id="asunto" placeholder="Asunto...">
-                </div>
-                <div class="row">
-                    <label for="textarea">Consulta</label>
-                    <textarea name="consulta" id="consulta" placeholder="Ingrese su consulta..."></textarea>
-                </div>
-                <button type="submit" class="mainButton">Enviar</button>
-            </fieldset>
-            </form>
-        </section>
-        <script src="js/jquery.min.js"></script>
-        <script src="js/gmaps.js"></script>
-        <script src="js/function.js"></script>
-        <script src="js/slider/jquery.bxslider.min.js"></script>
-</body>
+    </div>
+</div>
+
+
+<div id="contacto">
+	<div class="toolbar">
+    	<h1>CONTACTO</h1>
+        <a class="back" href="#home">Volver</a>
+    </div>
+    <div class="scroll">
+		<form>
+        	<ul class="edit rounded">
+                        <li><input type="text" name="name" placeholder="Nombre..." id="txt_name"></li>
+                        <li><input type="email" name="email" placeholder="Email..." id="some_name"></li>
+                        <li><input type="text" name="url" placeholder="Asunto..." id="some_name"></li>
+                        <li><textarea placeholder="Ingrese su consulta"></textarea></li>
+                        <li><input type="submit" name="enviar" value="ENVIAR" class="redButton" style="width:100%; margin:0px; padding:0px;"></li>
+             </ul>
+        </form>
+    </div>
+</div>
+
+
+</div>
+    </body>
+    <script>
+      if (window.navigator.standalone) {
+        $("meta[name='apple-mobile-web-app-status-bar-style']").remove();
+      }
+    </script>
 </html>
