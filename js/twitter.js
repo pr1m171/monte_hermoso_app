@@ -8,13 +8,11 @@ Zepto(function($){
 	function tweets(){         
 			
   		var http = new XMLHttpRequest();
-		var url = "http://www.mgocx.net/monte/connect/noticia.php";
+		var url = "http://montehermoso.gov.ar/app/connect/noticia.php";
 		var params = "data=data";
 		http.open("POST", url, true);
 		
 		http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-		http.setRequestHeader("Content-length", params.length);
-		http.setRequestHeader("Connection", "close");
 		
 		http.onreadystatechange = function() {//Call a function when the state changes.
 			if(http.readyState == 4 && http.status == 200) {
