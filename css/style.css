@@ -36,3 +36,10 @@
 	background:#FFFFFF;
 	padding:5px;
 }
+.lista_noticias{
+	margin:0px;
+	padding:0px;	
+}
+.lista_noticias{
+	list-style:none;
+}

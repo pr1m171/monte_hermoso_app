@@ -64,9 +64,11 @@
          <script src="js/frame/extensions/jqt.location.min.js" type="application/x-javascript" charset="utf-8"></script>
         <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
         
-        
+
         <script type="text/javascript" src="js/function.js"></script>
-        
+        <script type="text/javascript" src="js/cronograma.js"></script>
+        <script type="text/javascript" src="js/clima.js"></script>
+        <script type="text/javascript" src="js/twitter.js"></script>
         <script type="text/javascript" charset="utf-8">
 
             
@@ -90,7 +92,8 @@
                 <p><img src="http://127.0.0.1/monte_hermoso/monte_hermoso_app/app/img/monte.png" /></p>
                 <p><strong>Monte Hermoso</strong><br>Version 1.0 beta<br>
                     SECRETARIA DE TURISMO DE MONTE HERMOSO</p>
-                <p><em>Creado por<br> mgocx sistemas.</em></p>
+                <p><em>Creado por<br> mgocx - Gustavo Salvo.</em></p>
+                <p><em>Colaboraciones<br> Juan Pablo Sepúlveda.<br>David Hurtado.</em></p>
                 <p><br><br><a href="#" class="grayButton goback">Volver</a></p>
             </div>
             
@@ -101,11 +104,11 @@
                 </div>
                 <div class="scroll">
                     <ul class="rounded">
-                        <li class="arrow"><a href="timeline.html" class="cube"><i class="fa fa-calendar"></i> CRONOGRAMA</a> </li>
-                        <li class="arrow"><a href="#noticias"><i class="fa fa-newspaper-o"></i> NOTICIAS</a></li>
+                        <li class="arrow"><a href="#cronograma" id="ver_cronograma"><i class="fa fa-calendar"></i> CRONOGRAMA</a> </li>
+                        <li class="arrow"><a href="#noticias" id="ver_tweet"><i class="fa fa-newspaper-o"></i> NOTICIAS</a></li>
                         <li class="arrow"><a href="#mapa" id="ver_map"><i class="fa fa-map-marker"></i> MAPA</a></li>
-                        <li class="arrow"><a href="#clima"><i class="fa fa-sun-o"></i> CLIMA</a></li>
-                        <li class="arrow"><a href="#faq"><i class="fa fa-exclamation"></i> F.A.Q.</a> </li>
+                        <li class="arrow"><a href="#clima" id="ver_clima"><i class="fa fa-sun-o"></i> CLIMA</a></li>
+                        <!--<li class="arrow"><a href="#faq"><i class="fa fa-exclamation"></i> F.A.Q.</a> </li>-->
                         <li class="arrow"><a href="#contacto"><i class="fa fa-phone"></i> CONTACTO</a></li>
                     </ul>   
                 </div>
@@ -116,7 +119,21 @@
             </div>
             
             
-				
+				<div id="cronograma">
+                    <div class="toolbar">
+                        <h1>CRONOGRAMA</h1>
+                        <a class="back" href="#home">Volver</a>
+                    </div>
+<div class="scroll">
+		
+			<div class="main">
+				<ul class="cbp_tmtimeline" id="carga_cron">
+					                    
+				</ul>
+			</div>
+		</div>
+
+</div>
                 
                 <div id="noticias">
                     <div class="toolbar">
@@ -124,7 +141,7 @@
                         <a class="back" href="#home">Volver</a>
                     </div>
                     <div class="scroll">
-                        
+                        <div id="resultado_tweet"></div>
                     </div>
                 </div>     
 				
@@ -152,19 +169,23 @@
         <a class="back" href="#home">Volver</a>
     </div>
     <div class="scroll">
-    	<center>
-            <div id="cont_17836f7fb3f80a411ac7d2dd70f65793">
+    	<center><div id="cont_17836f7fb3f80a411ac7d2dd70f65793">
             <span id="h_17836f7fb3f80a411ac7d2dd70f65793">El Tiempo en Monte Hermoso</span>
             <script type="text/javascript" src="http://www.tiempo.com/wid_loader/17836f7fb3f80a411ac7d2dd70f65793"></script>
-            </div>
-            <h4>ESTADO DEL MAR:</h4>
-            <img src="http://127.0.0.1/monte_hermoso/monte_hermoso_admin/assets/img/banderas/dudoso.png" width="75" />
-            <br>
-            <h2>DUDOSO</h2>
-            </center>
+            </div></center>
+    	<div id="resultado_clima"></div>
     </div>
 </div>
 
+<div id="faq">
+                    <div class="toolbar">
+                        <h1>MONTE HERMOSO</h1>
+                        <a class="back" href="#home">Volver</a>
+                    </div>
+                    <div class="scroll">
+                        
+                    </div>
+                </div>  
 
 <div id="contacto">
 	<div class="toolbar">
