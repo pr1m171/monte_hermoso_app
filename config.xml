@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <widget xmlns = "http://www.w3.org/ns/widgets"
     xmlns:gap = "http://phonegap.com/ns/1.0"
-    id        = "com.phonegap.cursoPG"
+    id        = "ar.gov.montehermoso.app"
     version   = "1.0.0">
 
 
@@ -9,7 +9,7 @@
 <name>Monte Hermoso</name>
 
 <description>
-Portal portatil de monte hermoso
+Secretaria de turismo de monte hermoso
 </description>
 
 <author href="https://www.mgocx.net" email="info@mgocx.net">
@@ -20,7 +20,5 @@ Gustavo Salvo - Mgocx
 <gap:splash src="img/splash.png" />
 
 <preference name="phonegap-version" value="3.1.0" />
-<gap:plugin name="org.apache.cordova.device" />
-
 <gap:plugin name="org.apache.cordova.geolocation" />
 </widget>

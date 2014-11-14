@@ -3,8 +3,9 @@ Zepto(function($){
 	var cron = $('#ver_cronograma')
 	var vaina = $('#carga_cron')
 	cron.on('click', function(e){
-		cronograma();
+		
 	})
+	cronograma();
 	function cronograma(){         
 			
   		var http = new XMLHttpRequest();

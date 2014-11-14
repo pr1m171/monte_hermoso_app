@@ -3,8 +3,9 @@ Zepto(function($){
 	var car_twitter = $('#ver_tweet')
 	var twwet = $("#resultado_tweet")
 	car_twitter.on('click', function(e){
-		tweets();
+		
 	})
+	tweets();
 	function tweets(){         
 			
   		var http = new XMLHttpRequest();
