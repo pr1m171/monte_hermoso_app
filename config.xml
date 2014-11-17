@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+    xmlns:gap = "http://phonegap.com/ns/1.0"
+    id        = "ar.gov.montehermoso.app"
+    version   = "1.0.0">
+
+
+
+<name>Monte Hermoso</name>
+
+<description>
+Secretaria de turismo de monte hermoso
+</description>
+
+<author href="https://www.mgocx.net" email="info@mgocx.net">
+Gustavo Salvo - Mgocx
+</author>
+<preference name="orientation" value="portrait" />
+<icon src="img/icon.png" />
+<gap:splash src="img/splash.png" />
+
+<preference name="phonegap-version" value="3.1.0" />
+<gap:plugin name="org.apache.cordova.geolocation" />
+</widget>

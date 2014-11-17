@@ -1,0 +1,69 @@
+
+
+.btn_buscar{
+	position:absolute;
+	top:66px;
+	left:75px;
+	padding:10px;
+	border:2px solid grey;
+	border-radius:10px;
+	background:#fff;
+	cursor:pointer;
+	z-index:99;
+}
+.buscar_mapa{
+	position:absolute;
+	width:100%;
+	height:90%;
+	top:50px;
+	background-color: rgba(255,255,255,0.3);
+	padding:5px;
+	z-index:999;
+}
+.buscar_mapa input{
+	width:99%;
+	height:25px;
+	display:block;
+	background-color: rgb(255,255,255); opacity: 1;
+}
+.buscar_mapa a{
+	width:99%;
+	height:25px;
+	text-align:center;
+	display:block;
+	text-decoration:none;
+	color:#000;
+	background:#FFFFFF;
+	padding:5px;
+}
+.lista_noticias{
+	margin:0px;
+	padding:0px;	
+}
+.lista_noticias{
+	list-style:none;
+}
+.loader{
+	position:fixed;
+	padding:0px;
+	margin:0px;
+	width:100%;
+	height:100%;
+	background:#ccc;
+	z-index:99999999999;
+	text-align:center;
+}
+.loader img{
+	position:relative;
+	top:30%;
+}
+.ver_mas{
+	color: white;
+	background: red;
+	border: none;
+	border-radius: 5px;
+	padding: 5px;	
+}
+.lista_mapa a{
+	text-align:left !important;	
+}
