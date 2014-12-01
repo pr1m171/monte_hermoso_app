@@ -18,7 +18,7 @@ Zepto(function($){
 	var btn_inmo = $("#btn_map_inmo")
 	btn_dormir.on('click', function(e){
 		clearMarkers();
-		mapacarga(0, 'hoteles hospedaje hotel appart_hotel');
+		mapacarga(0, 'hoteles hospedaje hotel appart_hotel camping');
 		ele.hide();
 	})
 	btn_comer.on('click', function(e){
@@ -33,7 +33,7 @@ Zepto(function($){
 	})
 	btn_cafe.on('click', function(e){
 		clearMarkers();
-		mapacarga(0, 'cafe confiteria panaderia');
+		mapacarga(0, 'Cafe cafe confiteria panaderia');
 		ele.hide();
 	})
 	btn_inmo.on('click', function(e){
@@ -122,6 +122,7 @@ Zepto(function($){
 					locations.push({nombre: comercio[0], direccion: comercio[1], coordenada: comercio[2],descripcion: comercio[3], icon:'img/marker_'+ comercio[4] +'.png'});
 					
 					cant = cant + 1;
+					
 					codeAddress(comercio[0],comercio[1],comercio[2],comercio[3], 'img/marker_'+ comercio[4] +'.png', cant);
 					}
 				}
@@ -170,7 +171,6 @@ function codeAddress(nombre,direccion, coordenada,descripcion,icon,i) {
         }
       })(marker, i));
 	  markers.push(marker);
-	  
   }
 }		
 }
