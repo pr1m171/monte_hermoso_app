@@ -1,1 +1,0 @@
-!function(){function e(e){e.addEventListener("focus",i,!1)}function t(t){e(t.insertedNode)}function i(e){_gaq.push(["_trackPageview",window.location.pathname+"#"+e.target.id])}addEventListener("DOMContentLoaded",function(){document.body.addEventListener("afterinsert",t,!1);var i=emy.getAllViews();if(i)for(var n=0,s=i.length;s>n;n++)e(i[n])},!1)}();
