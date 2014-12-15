@@ -9,7 +9,7 @@ Zepto(function($){
 	function tweets(){         
 			
   		var http = new XMLHttpRequest();
-		var url = "http://montehermoso.gov.ar/app/connect/noticia.php";
+		var url = "http://www.montehermoso.gov.ar/app/connect/noticia.php";
 		var params = "data=data";
 		http.open("POST", url, true);
 		

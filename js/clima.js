@@ -9,7 +9,7 @@ Zepto(function($){
 	function clima(){         
 			
   		var http = new XMLHttpRequest();
-		var url = "http://www.mgocx.net/monte/connect/clima.php";
+		var url = "http://www.montehermoso.gov.ar/app/connect/clima.php";
 		var params = "data=data";
 		http.open("POST", url, true);
 		

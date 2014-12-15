@@ -9,7 +9,7 @@ Zepto(function($){
 	function cronograma(){         
 			
   		var http = new XMLHttpRequest();
-		var url = "http://www.mgocx.net/monte/connect/cronograma.php";
+		var url = "http://www.montehermoso.gov.ar/app/connect/cronograma.php";
 		var params = "data=data";
 		http.open("POST", url, true);
 		

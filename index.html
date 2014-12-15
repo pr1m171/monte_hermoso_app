@@ -69,6 +69,7 @@
         <script type="text/javascript" src="js/cronograma.js"></script>
         <script type="text/javascript" src="js/clima.js"></script>
         <script type="text/javascript" src="js/twitter.js"></script>
+        <script type="text/javascript" src="js/contacto.js"></script>
         <script type="text/javascript" charset="utf-8">
 
             
@@ -183,10 +184,13 @@
         <a class="back" href="#home">Volver</a>
     </div>
     <div class="scroll">
-    	<center><div id="cont_17836f7fb3f80a411ac7d2dd70f65793">
-            <span id="h_17836f7fb3f80a411ac7d2dd70f65793">El Tiempo en Monte Hermoso</span>
-            <script type="text/javascript" src="http://www.tiempo.com/wid_loader/17836f7fb3f80a411ac7d2dd70f65793"></script>
-            </div></center>
+    	<center>
+<a href="http://www.accuweather.com/en/ar/monte-hermoso/7243/weather-forecast/7243" class="aw-widget-legal">
+<!--
+By accessing and/or using this code snippet, you agree to AccuWeather’s terms and conditions (in English) which can be found at http://www.accuweather.com/en/free-weather-widgets/terms and AccuWeather’s Privacy Statement (in English) which can be found at http://www.accuweather.com/en/privacy.
+-->
+</a><div id="awtd1418267803044" class="aw-widget-36hour"  data-locationkey="" data-unit="c" data-language="es" data-useip="true" data-uid="awtd1418267803044" data-editlocation="true"></div><script type="text/javascript" src="http://oap.accuweather.com/launch.js"></script>
+</center>
     	<div id="resultado_clima"></div>
     </div>
 </div>
@@ -209,11 +213,11 @@
     <div class="scroll">
 		<form>
         	<ul class="edit rounded">
-                        <li><input type="text" name="name" placeholder="Nombre..." id="txt_name"></li>
-                        <li><input type="email" name="email" placeholder="Email..." id="some_name"></li>
-                        <li><input type="text" name="url" placeholder="Asunto..." id="some_name"></li>
-                        <li><textarea placeholder="Ingrese su consulta"></textarea></li>
-                        <li><a href="#" class="redButton" style="width:100%; margin:0px; padding:0px;">ENVIAR</a></li>
+                        <li><input type="text" name="name" placeholder="Nombre..." id="txt_con_nombre"></li>
+                        <li><input type="email" name="email" placeholder="Email..." id="txt_con_email"></li>
+                        <li><input type="text" name="url" placeholder="Asunto..." id="txt_con_asunto"></li>
+                        <li><textarea placeholder="Ingrese su consulta" id="txt_con_consulta"></textarea></li>
+                        <li><a id="enviar_contacto" href="#" class="redButton" style="width:100%; margin:0px; padding:0px;">ENVIAR</a></li>
              </ul>
         </form>
     </div>

@@ -81,7 +81,7 @@ Zepto(function($){
              carga_mapa_on=2;           
 			
   		var http = new XMLHttpRequest();
-		var url = "http://www.mgocx.net/monte/connect/mapa.php";
+		var url = "http://www.montehermoso.gov.ar/app/connect/mapa.php";
 		var params = "data=" + data;
 		var lista = null;
 		var lista2 = null;
