@@ -23,7 +23,7 @@ Zepto(function($){
 	})
 	btn_comer.on('click', function(e){
 		clearMarkers();
-		mapacarga(0, 'restaurant pizzeria comida cafe');
+		mapacarga(0, 'restaurant pizzeria comida cafe parrilla');
 		ele.hide();
 	})
 	btn_visitar.on('click', function(e){
